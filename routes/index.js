@@ -21,4 +21,11 @@ router.put('/json', async function (ctx, next) {
    }
 });
 
+router.post('/json', async function (ctx, next) {
+  console.log(ctx.request.body, ctx.request.query)
+  ctx.body = {
+    name:'zhangsan'
+  }
+});
+
 module.exports = router;
