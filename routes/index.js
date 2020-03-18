@@ -15,4 +15,10 @@ router.get('/foo', async function (ctx, next) {
   });
 });
 
+router.put('/json', async function (ctx, next) {
+   ctx.body = {
+     name:'lishi'
+   }
+});
+
 module.exports = router;
